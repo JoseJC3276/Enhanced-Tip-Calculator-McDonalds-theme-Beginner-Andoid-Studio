@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_Value"
+        style="@style/inputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/name_for_the_order"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_Label"
+        app:layout_constraintStart_toEndOf="@+id/name_Label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/order"
+        app:layout_constraintEnd_toEndOf="@id/name_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_Label" />
+
+    <EditText
+        android:id="@+id/order_Value"
+        style="@style/inputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/what_meal_would_you_like"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/order_Label"
+        app:layout_constraintStart_toEndOf="@+id/order_Label"
+        app:layout_constraintTop_toBottomOf="@+id/name_Value" />
+
+    <TextView
+        android:id="@+id/meal_Price_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/meal_price"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/order_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_Label" />
+
+    <EditText
+        android:id="@+id/meal_Price_Value"
+        style="@style/inputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_price_for_meal"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@id/meal_Price_Label"
+        app:layout_constraintStart_toEndOf="@+id/meal_Price_Label"
+        app:layout_constraintTop_toBottomOf="@+id/order_Value" />
+
+    <TextView
+        android:id="@+id/tip_Percent_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/tip"
+        app:layout_constraintEnd_toEndOf="@id/meal_Price_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_Price_Label" />
+
+    <EditText
+        android:id="@+id/tip_Percent_Value"
+        style="@style/inputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_tip_percentage"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@id/tip_Percent_Label"
+        app:layout_constraintStart_toEndOf="@+id/tip_Percent_Label"
+        app:layout_constraintTop_toBottomOf="@+id/meal_Price_Value" />
+
+    <View
+        android:id="@+id/yellow_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toTopOf="@+id/tip_Label"
+        app:layout_constraintEnd_toEndOf="@id/tip_Percent_Value"
+        app:layout_constraintEnd_toStartOf="@id/tip_Percent_Label"
+        app:layout_constraintTop_toBottomOf="@id/tip_Percent_Value" />
+
+    <TextView
+        android:id="@+id/tip_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tip_for_tip_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_Percent_Label" />
+
+    <TextView
+        android:id="@+id/tip_Amount"
+        style="@style/outputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tip_Label"
+        app:layout_constraintStart_toEndOf="@+id/tip_Label"
+        app:layout_constraintTop_toBottomOf="@+id/tip_Percent_Value" />
+
+    <TextView
+        android:id="@+id/total_Label"
+        style="@style/LabelStyle"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_Label" />
+
+    <TextView
+        android:id="@+id/total_Value"
+        style="@style/outputStyle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/total_Label"
+        app:layout_constraintStart_toEndOf="@id/total_Label"
+        app:layout_constraintTop_toBottomOf="@id/tip_Amount" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="257dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_Value"
+        app:srcCompat="@drawable/mcdonaldslogo"
+        android:contentDescription="@string/todo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

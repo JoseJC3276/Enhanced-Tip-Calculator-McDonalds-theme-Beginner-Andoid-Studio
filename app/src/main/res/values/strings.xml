@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab 3 MAD Jose Cabrera</string>
+    <string name="name_label">Name:</string>
+    <string name="name_Value">Name for Order</string>
+    <string name="order">Order:</string>
+    <string name="what_meal_would_you_like">What Meal Would You Like?</string>
+    <string name="meal_price">Meal Price:</string>
+    <string name="price_for_your_meal">Price For Your Meal</string>
+    <string name="tip">Tip(%):</string>
+    <string name="enter_tip_percentage">Enter Tip Percentage:</string>
+    <string name="tip_for_tip_label">Tip:</string>
+    <string name="enter_price_for_meal">Enter Price For Meal</string>
+    <string name="name_for_the_order">Name For The Order</string>
+    <string name="total">Total:</string>
+    <string name="todo">TODO</string>
+</resources>

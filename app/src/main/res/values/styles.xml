@@ -1,0 +1,47 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryVariant">@color/design_default_color_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextStyleMcD" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="LabelStyle" parent="TextStyleMcD">
+        <item name="android:background">@color/purple</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="centerTextStyle" parent="TextStyleMcD">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="inputStyle" parent="centerTextStyle">
+        <item name="android:textColorHint">@color/yellow</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="outputStyle" parent="centerTextStyle">
+        <item name="android:background">@color/purple</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+</resources>
